@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title> </title>>
+        <style type="text/css">
+            div.gallery {
+                border:1px solid #ccc;
+            }
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+            div.gallery img{
+                width: 100%;
+                height: auto;
+            }
+            div.desc{
+                padding: 15px;
+                text-align: center;
+            }
+
+            /*a todo lo que tenga caja le aplicamos boxsizing*/
+            *{
+                box-sizing: border-box;
+            }
+            /*contiene cada div de las imagenes*/
+            .responsive{
+                padding: 0 6px;
+                float: left;
+                width: 24.9999%;
+                height: 24.9999%;
+
+            }
+            /*solo si abre en dievrsas pantalla, a la clase responsive */
+            @media (max-width:700px) {
+                .responsive{
+                    width: 49.9999%;
+                    margin: 6px 0;
+                }
+            }
+            
+            @media (max-width:500px) {
+                .responsive{
+                    width: 100%;
+        
+                }
+            }
+
+            .clear {
+                clear:both;
+            }
+            
+            
+
+        </style>
+    </head>
+    <body>
+        <h2> Galeria de imagenes responsive</h2>
+        <h4> Cambia el tamaño de la ventana para ver el efecto</h4>
+        <div class="responsive">
+            <div class="gallery">
+                <a href="imagenes/image1.jpg">
+                    <img src="imagenes/image1.jpg" alt ="Manzana con cuchillo" width="600" height="400">
+                </a>
+                <div class="desc"> Manzana agresiva</div>
+            </div>
+        </div>
+<div class="responsive">
+            <div class="gallery">
+                <a href="imagenes/image2.jpg">
+                    <img src="imagenes/image2.jpg" alt ="Cebollas divertidas" width="600" height="400">
+                </a>
+                <div class="desc"> Cebollas divertidas deslizandose</div>
+            </div>
+        </div>
+<div class="responsive">
+            <div class="gallery">
+                <a href="imagenes/image3.jpg">
+                    <img src="imagenes/image3.jpg" alt ="Huevos racistas" width="600" height="400">
+                </a>
+                <div class="desc"> Huevos racistas agresivos</div>
+            </div>
+        </div>
+<div class="responsive">
+           <div class="gallery">
+                <a href="imagenes/image4.jpg">
+                    <img src="imagenes/image4.jpg" alt ="Bebes salchicha" width="600" height="400">
+                </a>
+                <div class="desc"> Bebes salchichas durmiendo</div>
+                <div class= "clear"></div>
+            </div>
+        </div>
+    </body>
+</html>
